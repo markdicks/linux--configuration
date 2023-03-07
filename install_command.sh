@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Set the path to the idea.sh script
 IDEA_SH="$(pwd)/idea.sh"
 
