@@ -60,4 +60,16 @@ echo "function ideafile() {
 # Reload the .bashrc file
 source ~/.bashrc
 
+# Create the IntelliJ IDEA .desktop file
+cat > ~/.local/share/applications/idea.desktop <<EOL
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IntelliJ IDEA
+Icon=$IDEA_BIN/idea.png
+Exec=$IDEA_SH
+Comment=Powerful and flexible IDE for Java development
+Categories=Development;IDE;
+EOL
+
 echo "The ideadir and openjava commands have been added to your shell environment."
